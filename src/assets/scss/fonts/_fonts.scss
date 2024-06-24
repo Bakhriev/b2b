@@ -1,0 +1,10 @@
+@mixin font($fontName, $fontPath, $fontFormat, $fontWeight) {
+	@font-face {
+		font-family: $fontName;
+		src: url($fontPath) format($fontFormat);
+		font-weight: $fontWeight;
+		font-style: normal;
+	}
+}
+
+@include font(Roboto, "../path", "woff2", 400);
